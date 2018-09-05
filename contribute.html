@@ -28,6 +28,10 @@ assetUrl = "/assets/8a9e91f";
 <!-- Fancybox Stylesheets -->
 <link rel="stylesheet" href="assets/js/vendors/fancybox/jquery.fancybox.min.css">
 <link rel="manifest" href="/manifest.json">
+<script src="https://unpkg.com/prefixfree@1.0.0/prefixfree.min.js"></script>
+<script src="https://wzrd.in/standalone/formdata-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 </head>
 <body id="site-body">
 	<header class="pwa-header">
@@ -35,63 +39,127 @@ assetUrl = "/assets/8a9e91f";
 			<img src="images/logo.svg">
 		</button>
     </header>
-    <div class="container medium-padding no-padding-top">
-        <h4 class="margin--no-t">Pilih Kategori</h4>
-        <div class="col margin-left-3 align-center">
-            <div class="col--s4 margin--medium-b">
-                <label class="radio-container icon-cat">
-                        <input name="method" type="radio" class="radio-hidden" checked>
-                        <img src="images/ico--cat__shirt.svg" class="radio-image">
-                </label>
-                <span>Pakaian</span>
-            </div>
-            <div class="col--s4 margin--medium-b">
-                <label class="radio-container icon-cat">
-                        <input name="method" type="radio" class="radio-hidden" checked>
-                        <img src="images/ico--cat__shoes.svg" class="radio-image">
-                </label>
-                <span>Sepatu</span>
-            </div>
-            <div class="col--s4 margin--medium-b">
-                <label class="radio-container icon-cat">
-                    <input name="method" type="radio" class="radio-hidden" checked>
-                    <img src="images/ico--cat__bags.svg" class="radio-image">
-                </label>
-                <span>Tas</span>
-            </div>
-            <div class="col--s4 margin--medium-b">
-                <label class="radio-container icon-cat">
-                    <input name="method" type="radio" class="radio-hidden" checked>
-                    <img src="images/ico--cat__books.svg" class="radio-image">
-                </label>
-                <span>Buku</span>
-            </div>
-            <div class="col--s4 margin--medium-b">
-                <label class="radio-container icon-cat">
-                    <input name="method" type="radio" class="radio-hidden" checked>
-                    <img src="images/ico--cat__electronics.svg" class="radio-image">
-                </label>
-                <span>Elektronik</span>
-            </div>
-            <div class="col--s4 margin--medium-b">
-                <label class="radio-container icon-cat">
-                    <input name="method" type="radio" class="radio-hidden" checked>
-                    <img src="images/ico--cat__furniture.svg" class="radio-image">
-                </label>
-                <span>Furniture</span>
-            </div>
-        </div>
-        <div class="form__row">
-            <label class="margin--small-v d-inline">Nama Barang / Merk</label>
-            <input id="nama_lengkap" class="form-input form-input--block js-show-checkbox " data-show="#nama_lengkap" type="text" name="nama_lengkap" placeholder="Sweater Lanfei Girl">
-        </div>
-        <div class="form__row">
-            <label class="margin--small-v d-inline">Deskripsi Barang</label>
-            <textarea id="deskripsi_barang" rows="4" class="form-input form-input--block js-show-checkbox " data-show="#nama_lengkap" type="text" name="nama_lengkap" placeholder="Masih Bagus, Wangi dan Bersih"></textarea>
-        </div>
-        <div class="form_row margin--medium-t">
-            <button class="btn btn--block btn--normal btn--blue align-center">Sedikit Lagi</button>
-        </div>
-    </div>
+
+    <form name="submit-to-google-sheet">
+            <div class="container medium-padding no-padding-top">
+                    <h4 class="margin--no-t">Pilih Kategori</h4>
+                    <div class="col margin-left-3 align-center">
+                        <div class="col--s4 margin--medium-b">
+                            <label class="radio-container icon-cat">
+                                    <input name="method" type="radio" class="radio-hidden" checked>
+                                    <img src="images/ico--cat__shirt.svg" class="radio-image">
+                            </label>
+                            <span>Pakaian</span>
+                        </div>
+                        <div class="col--s4 margin--medium-b">
+                            <label class="radio-container icon-cat">
+                                    <input name="method" type="radio" class="radio-hidden" checked>
+                                    <img src="images/ico--cat__shoes.svg" class="radio-image">
+                            </label>
+                            <span>Sepatu</span>
+                        </div>
+                        <div class="col--s4 margin--medium-b">
+                            <label class="radio-container icon-cat">
+                                <input name="method" type="radio" class="radio-hidden" checked>
+                                <img src="images/ico--cat__bags.svg" class="radio-image">
+                            </label>
+                            <span>Tas</span>
+                        </div>
+                        <div class="col--s4 margin--medium-b">
+                            <label class="radio-container icon-cat">
+                                <input name="method" type="radio" class="radio-hidden" checked>
+                                <img src="images/ico--cat__books.svg" class="radio-image">
+                            </label>
+                            <span>Buku</span>
+                        </div>
+                        <div class="col--s4 margin--medium-b">
+                            <label class="radio-container icon-cat">
+                                <input name="method" type="radio" class="radio-hidden" checked>
+                                <img src="images/ico--cat__electronics.svg" class="radio-image">
+                            </label>
+                            <span>Elektronik</span>
+                        </div>
+                        <div class="col--s4 margin--medium-b">
+                            <label class="radio-container icon-cat">
+                                <input name="method" type="radio" class="radio-hidden" checked>
+                                <img src="images/ico--cat__furniture.svg" class="radio-image">
+                            </label>
+                            <span>Furniture</span>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <label class="margin--small-v d-inline">Nama Barang / Merk</label>
+                        <input id="nama_lengkap" class="form-input form-input--block js-show-checkbox " data-show="#nama_lengkap" type="text" name="nama_lengkap" placeholder="Sweater Lanfei Girl">
+                    </div>
+                    <div class="form__row">
+                        <label class="margin--small-v d-inline">Deskripsi Barang</label>
+                        <textarea id="deskripsi_barang" rows="4" class="form-input form-input--block js-show-checkbox " data-show="#nama_lengkap" type="text" name="nama_lengkap" placeholder="Masih Bagus, Wangi dan Bersih"></textarea>
+                    </div>
+                    <div class="form_row margin--medium-t">
+                        <button class="btn btn--block btn--normal btn--blue align-center">Sedikit Lagi</button>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8842509582714!2d106.77053865078683!3d-6.278945095433104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1b512bf47eb%3A0x4dd6d99baef69196!2sKitabisa.com!5e0!3m2!1sid!2sid!4v1536122262054" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="container medium-padding">
+                    <h4 class="margin--no-t">Kirim Barang</h4>
+                    <p>Jl. Ciputat Raya No.27D, RT.1/RW.7, Pd. Pinang, Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310</p>
+                    <div class="form__row">
+                            <label class="margin--small-v d-inline">Tanggal Pengantaran</label>
+                            <input id="nama_lengkap" class="form-input form-input--block js-show-checkbox " data-show="#nama_lengkap" type="text" name="nama_lengkap" placeholder="Sweater Lanfei Girl">
+                        </div>
+                    <div class="form__row">
+                        <label class="margin--small-v d-inline">Nama Lengkap</label>
+                        <input id="nama" name="nama" class="form-input form-input--block js-show-checkbox " data-show="#nama" type="text" name="nama" placeholder="Kaesang Pangarep">
+                    </div>
+                    <div class="form__row">
+                        <label class="margin--small-v d-inline">No. Handphone (Whatsapp)</label>
+                        <input id="no_handphone" class="form-input form-input--block js-show-checkbox " data-show="#no_handphone" type="text" name="no_handphone" placeholder="0812345689">
+                    </div>
+                    <div class="form__row">
+                            <label class="margin--small-v d-inline">No. Handphone (Whatsapp)</label>
+                            <input id="nama_lengkap" class="form-input form-input--block js-show-checkbox " data-show="#nama_lengkap" type="text" name="nama_lengkap" placeholder="Sweater Lanfei Girl">
+                        </div>
+                    <div class="form_row margin--medium-t">
+                        <button type="submit" class="btn btn--block btn--normal btn--blue align-center">Selesai</button>
+                    </div>
+                </div>
+    </form>
+    <script>
+            //const scriptURL = 'https://script.google.com/a/stylesheets.co/macros/s/AKfycbzl3hk6JfWqMkVz8S1p5Txky_fscyNWJUCuQQHGHfVP5YLH99A/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyGIBmUY_4q69ZMCRAL9Y4pI78aM-EFIBLIE2GUCv97UXKJfEs/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const loading = document.querySelector('.js-loading')
+            const successMessage = document.querySelector('.js-success-message')
+            const errorMessage = document.querySelector('.js-error-message')
+        
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              showLoadingIndicator()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => showSuccessMessage(response))
+                .catch(error => showErrorMessage(error))
+            })
+        
+            function showLoadingIndicator () {
+              form.classList.add('is-hidden')
+              loading.classList.remove('is-hidden')
+            }
+        
+            function showSuccessMessage (response) {
+              console.log('Success!', response)
+              setTimeout(() => {
+                successMessage.classList.remove('is-hidden')
+                loading.classList.add('is-hidden')
+              }, 500)
+            }
+        
+            function showErrorMessage (error) {
+              console.error('Error!', error.message)
+              setTimeout(() => {
+                errorMessage.classList.remove('is-hidden')
+                loading.classList.add('is-hidden')
+              }, 500)
+            }
+          </script>
 </body>
 </html>
