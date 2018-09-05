@@ -209,11 +209,25 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/campaign-detail.html": {
+	"\/contribute-02.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/campaign-detail.html",
+		"oAP": "\/contribute-02.html",
+		"oF": 0
+		},
+	"\/contribute.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/contribute.html",
+		"oF": 0
+		},
+	"\/detail.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/detail.html",
 		"oF": 0
 		},
 	"\/images\/bca.png": {
@@ -226,6 +240,98 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/images\/btn--plus.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/btn--plus.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/content--attribute-home.png": {
+		"ft": 32768,
+		"iS": 342750,
+		"oA": 0,
+		"oAP": "\/images\/content--attribute-home.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/how-to.jpeg": {
+		"ft": 16384,
+		"iS": 70604,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/how-to.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/ico--cat__bags.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/ico--cat__bags.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/ico--cat__books.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/ico--cat__books.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/ico--cat__electronics.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/ico--cat__electronics.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/ico--cat__furniture.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/ico--cat__furniture.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/ico--cat__shirt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/ico--cat__shirt.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/ico--cat__shoes.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/ico--cat__shoes.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/images\/ktp-selfie.png": {
 		"ft": 32768,
@@ -249,48 +355,36 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/images\/lombok-0.jpg": {
+	"\/images\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/sample-01.jpg": {
 		"ft": 16384,
-		"iS": 57222,
+		"iS": 72324,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/images\/lombok-0.jpg",
+		"oAP": "\/images\/sample-01.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/images\/lombok-1.jpg": {
+	"\/images\/sample-02.jpg": {
 		"ft": 16384,
-		"iS": 85832,
+		"iS": 61875,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/images\/lombok-1.jpg",
+		"oAP": "\/images\/sample-02.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"\/images\/lombok-2.jpg": {
-		"ft": 16384,
-		"iS": 87010,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/images\/lombok-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/other-donation.png": {
-		"ft": 32768,
-		"iS": 231375,
-		"oA": 0,
-		"oAP": "\/images\/other-donation.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"\/images\/social-netwok.png": {
@@ -304,30 +398,23 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/images\/top--attribute-home.png": {
+		"ft": 32768,
+		"iS": 188692,
+		"oA": 0,
+		"oAP": "\/images\/top--attribute-home.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/index.html",
 		"oF": 0
-		},
-	"\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
 		},
 	"\/sass\/update.scss": {
 		"aP": 0,
@@ -341,34 +428,6 @@
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
-		},
-	"\/signin.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/signin.html",
-		"oF": 0
-		},
-	"\/signup.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/signup.html",
-		"oF": 0
-		},
-	"\/summary.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/summary.html",
-		"oF": 0
-		},
-	"\/verifikasi.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/verifikasi.html",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -377,7 +436,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 557046301,
-	"displayValue": "kitabisa",
+	"displayValue": "sumbangin",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-jake",
 	"iconImageWasSetByUser": 0

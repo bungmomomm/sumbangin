@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600');
+
 $clr-primary : #00AFEF;
 $clr-white : #FFF;
 $clr-lightgrey : #f2f3f4;
@@ -49,11 +51,54 @@ $size-xsmall : 5px;
 }
 
 body {
-	font-family: 'Open Sans',sans-serif;
+	font-family: 'Roboto', sans-serif !important;
 	margin: 0;
-	padding: 50px 0 75px;
+	padding: 0;
 	overflow-x: hidden;
 	background-color: $clr-white;
+
+	&.home {
+		position: relative;
+		background: url(../../images/top--attribute-home.png) no-repeat top right;
+		background-size: 175px auto; 
+		padding-top: 25px;
+
+		.pwa-header {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			background: transparent;
+		}
+
+		.top-content {
+			padding: 0 10px;
+			p {
+				max-width: 75%;
+				margin: 0;
+			}
+		}
+
+		.post {
+			&-content {
+				border-radius: 5px;
+				box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+			}
+		}
+
+		.btn {
+			&--plus {
+				display: block;
+				width: 90px;
+				height: 90px;
+				position: fixed;
+				bottom: 0;
+				border-radius: 50px;
+				border: none;
+				right: 0;
+				z-index: 9;
+			}
+		}
+
+	}
 	
 	.featuredImages {
 
@@ -84,82 +129,12 @@ body {
 		}
 	}
 
-	.pwa-campaign {
-		&-status {
+	.pwa {
+		&-header {
+			background-color: $clr-white;
 			border-bottom: none;
-			&__campaigner {
-				vertical-align: top;
-				margin-left: 15px;
-				margin-top: 0;
-
-				.social-network img {height: 20px;}
-			}
-		}
-		&__stats {margin-top: 10px;}
-		&__bar {
-			height: 5px;
-		}
-		&__barfill {
-			height: 5px;
-			transition: width 1.5s ease-in-out;
-		    -moz-transition: width 1.5s ease-in-out;
-		    -webkit-transition: width 1.5s ease-in-out;
-		    -o-transition: width 1.5s ease-in-out;
-		    width: 10px;
-			background-image: linear-gradient(90deg, #51D0FF 0%, #43ADFF 100%);
-			border-radius: 100px;
-		}
-	}
-
-	.pwa-campaigner {
-		&__figure {margin-left: 0;}
-	}
-
-	.pwa-donation {
-		&__summary {
-			background-color: #F9F9F9;
-			border: 1px solid #e8e8e8;
-			border-radius: 4px;
-			text-align: left;
-			padding-left: 15px;
-			padding-right: 15px;
-			padding-bottom: 15px;
-
-			&-amount {font-weight: 400;}
-			li {
-
-				line-height: normal;
-
-				.col {
-					padding-bottom: 10px;border-bottom: 1px solid #E8E8E8;
-
-					div:first-child {font-weight: 600;}
-					div:last-child {font-weight: normal;}
-				}
-
-				.text-copied {
-					z-index: 1;
-					font-weight: 600;
-					text-transform: uppercase;
-					margin-top: 10px;
-				}
-			}
-			li:last-child .col {border:none;padding-bottom: 0;}
-		}
-	}
-
-	.copy-trigger {
-
-		position: relative;
-
-		.text-copied {
-			display: inline;
-			position: absolute;
-			right: 10px;
-			top: 5px;
-			z-index: 1;
-			font-weight: 600;
-			text-transform: uppercase;
+			padding: 20px 20px;
+			position: relative;
 		}
 	}
 	.spacer {
@@ -168,45 +143,133 @@ body {
 		/*margin-top: 20px;
 		margin-bottom: 20px;*/
 	}
+	.product {
+		&-item {
+			position: relative;
+			float: left;
+			margin: 0 15px 10px 0;
+			border-radius: 5px;
+			box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+			-webkit-box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+			overflow: hidden;
+			background-color: #fff;
+			min-width: 145px;
+			width: 45%;
+			min-height: 210px;
 
-	.comment {
-		&-list {
-			background-color: #F8F8F8;
-			border-radius: 4px;
-			padding: 15px;
-			z-index: 1;
-			margin-bottom: 10px;
-
-			.pwa-campaigner__figure {
-				height: 50px;
-				vertical-align: middle;
-				background-color: #d8d8d8;
-				text-align: center;
-				text-transform: uppercase;
-				color: #4a4a4a;
-				line-height: 47px;
-			    font-size: 16px;
-			    font-weight: 600;
-			    z-index: 1;
+			&__head {
+				position: relative;
 			}
-
-			h3 {
-				max-width: 72%;
-				font-weight: 400;
-				line-height: normal;
-
-				span {font-weight: 600;}
-				p {font-weight: 400;}
+			&__badge {
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 100;
+			}
+			&__image {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				min-width: 145px;
+				min-height: 115px;
+				max-width: 210px;
+				max-height: 210px;
+				overflow: hidden;
+				border-top-right-radius: 3px;
+				border-top-left-radius: 3px;
+			}
+			&__body {
+				height: 75px;
+				padding: 10px;
+			}
+			&__name {
+				position: relative;
+				height: 20px;
+				font-weight: 600;
+				font-size: 13px;
+				color: #555545;
+				overflow: hidden;
+				line-height: 16px;
+			}
+			&__price {
+				font-size: 12px;
+				font-weight: 600;
+				color: #ff7900 !important;
+				padding-top: 2px;
+			}
+			&__option {
+				position: relative;
+			}
+			&__info {
+				display: inline-block;
+				padding: 2px 4px;
+				font-size: 9px;
+				color: #989898;
+				border-radius: 4px;
+				text-transform: capitalize;
+				background: #f4f4f4;
+				margin-top: 2px;
+			}
+			&_footer {
+				position: absolute;
+				bottom: 8px;
+				width: 100%;
+				left: 0;
+				padding: 0 10px;
+			}
+			&__location {
+				position: relative;
+				// margin-top: 14px;
+				margin-bottom: 3px;
+				white-space: nowrap;
+				width: 100%;
+				font-size: 12px;
+				color: #989898;
+				overflow: hidden;
 			}
 		}
-		&-feeds {
-			background-color: $clr-white;
-			border-bottom: 1px solid #E8E8E8;
-			border-radius: 0;
-			padding-left: 0;
-			padding-right: 0;
-			z-index: 1;
-		}
+	}
+	.radio-container {
+		height: 80px;
+		width: 80px;
+		display: block;
+		padding: 20px 0;
+		background-color: #F8F8F8;
+		border: 1px solid #D8D8D8;
+		// -webkit-box-shadow: 0px 15px 30px 0px rgba(16,146,147,0.12);
+		// -moz-box-shadow: 0px 15px 30px 0px rgba(16,146,147,0.12);
+		// box-shadow: 0px 15px 30px 0px rgba(16,146,147,0.12);
+		border-radius: 10px;
+		-webkit-transition-duration: .2s;
+		-moz-transition-duration: .2s;
+		-o-transition-duration: .2s;
+		transition-duration: .2s;
+		cursor: pointer;
+	}
+	.radio-container + span {font-size: 12px;}
+	.radio-image {
+		opacity: .2;
+	}
+
+	.radio-hidden:checked ~ .radio-image {
+		transform: scale(1);
+		opacity: 1;
+	}
+	.radio-hidden {
+		position: absolute;
+		visibility: hidden;
+		opacity: .4;
+	}
+	.radio-container {
+		margin: 10px;
+	}
+	  .radio-image:hover {
+		transform: scale(1.03);
+	}
+
+	.icon-cat {
+		margin: 0 auto 10px;
 	}
 
 	.fancybox {
@@ -557,6 +620,7 @@ body {
 	.no-padding {
 		padding: 0;
 
+		&-top {padding-top: 0;}
 		&-left {padding-left: 0;}
 		&-right {padding-right: 0;}
 		&-bottom {padding-bottom: 0;}
