@@ -55,24 +55,35 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	background-color: $clr-white;
 
 	&.home {
 		position: relative;
-		background: url(../../images/top--attribute-home.png) no-repeat top right;
-		background-size: 175px auto; 
-		padding-top: 25px;
-
+		width: 100%;
+		
 		.pwa-header {
 			padding-top: 20px;
 			padding-bottom: 20px;
-			background: transparent;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 175px;
+				height: 190px;
+				top: 0;
+				right: 0;
+				z-index: 2;
+				background: #f2f4f2 url(../../images/top--attribute-home.png) no-repeat top right;
+				background-size: 175px auto; 
+			}
 		}
 
 		.top-content {
-			padding: 0 10px;
+			font-size: 13px;
+			font-weight: 300;
+			padding: 0 20px;
 			p {
-				max-width: 75%;
+				max-width: 70%;
 				margin: 0;
 			}
 		}
@@ -180,7 +191,7 @@ body {
 				border-top-left-radius: 3px;
 			}
 			&__body {
-				height: 75px;
+				height: 90px;
 				padding: 10px;
 			}
 			&__name {
@@ -574,6 +585,12 @@ body {
 	}
 
 	.container {
+
+		max-width: 480px !important;
+		width: 100%;
+		// box-shadow: 0 10px 50px 0 #ccc;
+		// -webkit-box-shadow:0 10px 50px 0 #ccc;
+
 		&-fluid {width: 100%;}
 	}
 
@@ -653,7 +670,7 @@ body {
 
 	.medium {
 		&-padding {
-			padding: 20px 10px;
+			padding: 20px 20px;
 		}
 	}
 
@@ -685,4 +702,5 @@ body {
 		list-style: none;
 		padding-left: 0;
 	}
+
 }

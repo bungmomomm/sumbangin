@@ -34,54 +34,54 @@ assetUrl = "/assets/8a9e91f";
 <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 </head>
 <body id="site-body">
-	<header class="pwa-header">
-		<button class="btn">
+	<header class="pwa-header container">
+		<a href="/" class="btn" title="Sumbang.in">
 			<img src="images/logo.svg">
-		</button>
+        </a>
     </header>
 
     <form name="submit-to-google-sheet">
-            <div id="personal-step" class="container medium-padding no-padding-top">
+            <div id="personal-step" class="container medium-padding white-bg no-padding-top">
                     <h4 class="margin--no-t">Pilih Kategori Barang</h4>
                     <div class="col margin-left-3 align-center">
                         <div class="col--s4 margin--medium-b">
                             <label class="radio-container icon-cat">
-                                    <input name="kategori" value="Pakaian" type="radio" class="radio-hidden" checked>
+                                    <input name="kategori" value="Pakaian" type="checkbox" class="radio-hidden" checked>
                                     <img src="images/ico--cat__shirt.svg" class="radio-image">
                             </label>
                             <span>Pakaian</span>
                         </div>
                         <div class="col--s4 margin--medium-b">
                             <label class="radio-container icon-cat">
-                                    <input name="kategori" value="Sepatu" type="radio" class="radio-hidden" checked>
+                                    <input name="kategori" value="Sepatu" type="checkbox" class="radio-hidden">
                                     <img src="images/ico--cat__shoes.svg" class="radio-image">
                             </label>
                             <span>Sepatu</span>
                         </div>
                         <div class="col--s4 margin--medium-b">
                             <label class="radio-container icon-cat">
-                                <input name="kategori" value="Tas" type="radio" class="radio-hidden" checked>
+                                <input name="kategori" value="Tas" type="checkbox" class="radio-hidden">
                                 <img src="images/ico--cat__bags.svg" class="radio-image">
                             </label>
                             <span>Tas</span>
                         </div>
                         <div class="col--s4 margin--medium-b">
                             <label class="radio-container icon-cat">
-                                <input name="kategori" value="Buku" type="radio" class="radio-hidden" checked>
+                                <input name="kategori" value="Buku" type="checkbox" class="radio-hidden">
                                 <img src="images/ico--cat__books.svg" class="radio-image">
                             </label>
                             <span>Buku</span>
                         </div>
                         <div class="col--s4 margin--medium-b">
                             <label class="radio-container icon-cat">
-                                <input name="kategori" value="Elektronik" type="radio" class="radio-hidden" checked>
+                                <input name="kategori" value="Elektronik" type="checkbox" class="radio-hidden">
                                 <img src="images/ico--cat__electronics.svg" class="radio-image">
                             </label>
                             <span>Elektronik</span>
                         </div>
                         <div class="col--s4 margin--medium-b">
                             <label class="radio-container icon-cat">
-                                <input name="kategori" value="Furniture" type="radio" class="radio-hidden" checked>
+                                <input name="kategori" value="Furniture" type="checkbox" class="radio-hidden">
                                 <img src="images/ico--cat__furniture.svg" class="radio-image">
                             </label>
                             <span>Furniture</span>
@@ -89,11 +89,11 @@ assetUrl = "/assets/8a9e91f";
                     </div>
                     <div class="form__row">
                         <label class="margin--small-v d-inline">Nama Barang / Merk</label>
-                        <input id="jenis_barang" class="form-input form-input--block" data-show="#jenis_barang" type="text" name="jenis_barang" placeholder="Sweater Lanfei Girl">
+                        <input id="jenis_barang" class="form-input form-input--block" data-show="#jenis_barang" type="text" name="jenis_barang" placeholder="Sweater Lanfei Girl" required>
                     </div>
                     <div class="form__row">
                         <label class="margin--small-v d-inline">Deskripsi Barang</label>
-                        <textarea id="deskripsi_barang" rows="4" class="form-input form-input--block" data-show="#deskripsi_barang" type="text" name="deskripsi_barang" placeholder="Baju wanita 2 kantong, 1 hp merk Xiaomi, 1 laptop Acer, mainan anak satu kardus Aqua"></textarea>
+                        <textarea id="deskripsi_barang" rows="4" class="form-input form-input--block" data-show="#deskripsi_barang" type="text" name="deskripsi_barang" placeholder="Baju wanita 2 kantong, 1 hp merk Xiaomi, 1 laptop Acer, mainan anak satu kardus Aqua" required></textarea>
                     </div>
                     <div class="form__row">
                             <label class="margin--small-v d-inline">Didonasikan ke</label>
@@ -104,10 +104,10 @@ assetUrl = "/assets/8a9e91f";
                             </select>
                         </div>
                     <div class="form_row margin--medium-t">
-                        <button id="next-step" class="btn btn--block btn--normal btn--blue align-center">Sedikit Lagi</button>
+                        <a href="#" id="next-step" class="btn btn--block btn--normal btn--blue align-center">Sedikit Lagi</a>
                     </div>
                 </div>
-                <div class="container medium-padding" id="shipping-step">
+                <div class="container medium-padding white-bg" id="shipping-step">
                     <h4 class="margin--no-t">Kirim Barang</h4>
                     <div class="form__row">
                             <label class="margin--small-v d-inline">Tanggal Penjemputan</label>
