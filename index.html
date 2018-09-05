@@ -45,16 +45,42 @@ assetUrl = "/assets/8a9e91f";
 				<a href="contribute.html" class="btn btn--normal btn--blue align-center">Coba Sekarang</a>
 				<div class="margin--large-v">
 					<h4>Sumbangin Terakhir</h4>
-					<div class="product-item">
+				</div>
+		</div>
+		<div class="featured owl-carousel owl-theme">
+				<div class="product-item">
+					<div class="product-item__head">
+						<div class="product-item__badge"></div>
+						<div class="product-item__image">
+							<a href="detail.html"><img alt="" alt="Anthea Kids" src="images/sample-01.jpg"></a>
+						</div>
+					</div>
+					<div class="product-item__body">
+						<div class="product-item__name">
+							Anthea Kids
+						</div>
+						<div class="product-item__option">
+								<div class="product-item__info">
+									Bekas
+								</div>
+						</div>
+					</div>
+					<div class="product-item_footer">
+						<div class="product-item__location">
+							Kab. Serang, Banten
+						</div>
+					</div>
+				</div>
+				<div class="product-item">
 						<div class="product-item__head">
 							<div class="product-item__badge"></div>
 							<div class="product-item__image">
-								<a href="detail.html"><img alt="" alt="Anthea Kids" src="images/sample-01.jpg"></a>
+								<a href="detail.html"><img alt="" alt="Anthea Kids" src="images/sample-02.jpg"></a>
 							</div>
 						</div>
 						<div class="product-item__body">
 							<div class="product-item__name">
-								Anthea Kids
+								Laneigirl
 							</div>
 							<div class="product-item__option">
 									<div class="product-item__info">
@@ -91,20 +117,82 @@ assetUrl = "/assets/8a9e91f";
 								</div>
 							</div>
 						</div>
-					<div class="clearfix"></div>
-				</div>
+						<div class="product-item">
+								<div class="product-item__head">
+									<div class="product-item__badge"></div>
+									<div class="product-item__image">
+										<a href="detail.html"><img alt="" alt="Anthea Kids" src="images/sample-02.jpg"></a>
+									</div>
+								</div>
+								<div class="product-item__body">
+									<div class="product-item__name">
+										Laneigirl
+									</div>
+									<div class="product-item__option">
+											<div class="product-item__info">
+												Bekas
+											</div>
+									</div>
+								</div>
+								<div class="product-item_footer">
+									<div class="product-item__location">
+										Kab. Serang, Banten
+									</div>
+								</div>
+							</div>
+							<div class="product-item">
+									<div class="product-item__head">
+										<div class="product-item__badge"></div>
+										<div class="product-item__image">
+											<a href="detail.html"><img alt="" alt="Anthea Kids" src="images/sample-02.jpg"></a>
+										</div>
+									</div>
+									<div class="product-item__body">
+										<div class="product-item__name">
+											Laneigirl
+										</div>
+										<div class="product-item__option">
+												<div class="product-item__info">
+													Bekas
+												</div>
+										</div>
+									</div>
+									<div class="product-item_footer">
+										<div class="product-item__location">
+											Kab. Serang, Banten
+										</div>
+									</div>
+								</div>
+			</div>
+			<div class="clearfix"></div>
 				<div class="margin--large-v">
 					<h4>Beli Berarti Donasi</h4>
 					<div class="post-content margin--medium-v">
-						<img src="images/content--attribute-home.png" width="100%" alt="" />
+							<a href="images/content--attribute-home.png" data-fancybox><img src="images/content--attribute-home.png" alt="" width="100%" /></a>
 					</div>
 					<div class="post-content margin--medium-v">
-						<img src="images/how-to.jpeg" alt="" width="100%" />
+						<a href="images/how-to.jpeg" data-fancybox><img src="images/how-to.jpeg" alt="" width="100%" /></a>
 					</div>
 				</div>
-			</div>
-		</div>
     </div>
 	<script src="assets/js/vendors/jquery.min.js"></script>
+	<script src="assets/js/vendors/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/js/vendors/fancybox/jquery.fancybox.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('.featured').owlCarousel({
+				stagePadding: 20,
+            	autoplay:true,
+			    autoplayTimeout:6000,
+			    autoplayHoverPause:true,
+                center: false,
+                loop: false,
+                margin: 20,
+				items : 2
+            });
+
+        });
+	</script>
 </body>
 </html>
