@@ -41,8 +41,8 @@ assetUrl = "/assets/8a9e91f";
     </header>
 
     <form name="submit-to-google-sheet">
-            <div class="container medium-padding no-padding-top">
-                    <h4 class="margin--no-t">Pilih Kategori</h4>
+            <div id="personal-step" class="container medium-padding no-padding-top">
+                    <h4 class="margin--no-t">Pilih Kategori Barang</h4>
                     <div class="col margin-left-3 align-center">
                         <div class="col--s4 margin--medium-b">
                             <label class="radio-container icon-cat">
@@ -89,53 +89,94 @@ assetUrl = "/assets/8a9e91f";
                     </div>
                     <div class="form__row">
                         <label class="margin--small-v d-inline">Nama Barang / Merk</label>
-                        <input id="jenis_barang" class="form-input form-input--block js-show-checkbox " data-show="#jenis_barang" type="text" name="jenis_barang" placeholder="Sweater Lanfei Girl">
+                        <input id="jenis_barang" class="form-input form-input--block" data-show="#jenis_barang" type="text" name="jenis_barang" placeholder="Sweater Lanfei Girl">
                     </div>
                     <div class="form__row">
                         <label class="margin--small-v d-inline">Deskripsi Barang</label>
-                        <textarea id="deskripsi_barang" rows="4" class="form-input form-input--block js-show-checkbox " data-show="#deskripsi_barang" type="text" name="deskripsi_barang" placeholder="Masih Bagus, Wangi dan Bersih"></textarea>
+                        <textarea id="deskripsi_barang" rows="4" class="form-input form-input--block" data-show="#deskripsi_barang" type="text" name="deskripsi_barang" placeholder="Baju wanita 2 kantong, 1 hp merk Xiaomi, 1 laptop Acer, mainan anak satu kardus Aqua"></textarea>
                     </div>
+                    <div class="form__row">
+                            <label class="margin--small-v d-inline">Didonasikan ke</label>
+                            <select name="penerima_donasi" class="form-input form-input--block">
+                                <option value="Anak Yatim">Anak Yatim</option>
+                                <option value="Panti Asuhan / Rumah Singgah">Panti Asuhan / Rumah Singgah</option>
+                                <option value="Pendidikan Gratis">Pendidikan Gratis</option>
+                            </select>
+                        </div>
                     <div class="form_row margin--medium-t">
-                        <button class="btn btn--block btn--normal btn--blue align-center">Sedikit Lagi</button>
+                        <button id="next-step" class="btn btn--block btn--normal btn--blue align-center">Sedikit Lagi</button>
                     </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8842509582714!2d106.77053865078683!3d-6.278945095433104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1b512bf47eb%3A0x4dd6d99baef69196!2sKitabisa.com!5e0!3m2!1sid!2sid!4v1536122262054" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <div class="container medium-padding">
+                <div class="container medium-padding" id="shipping-step">
                     <h4 class="margin--no-t">Kirim Barang</h4>
-                    <p>Jl. Ciputat Raya No.27D, RT.1/RW.7, Pd. Pinang, Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310</p>
                     <div class="form__row">
-                            <label class="margin--small-v d-inline">Tanggal Pengantaran</label>
-                            <input id="nama_lengkap" class="form-input form-input--block js-show-checkbox " data-show="#nama_lengkap" type="text" name="nama_lengkap" placeholder="Sweater Lanfei Girl">
+                            <label class="margin--small-v d-inline">Tanggal Penjemputan</label>
+                            <input id="tgl_penjemputan" class="form-input form-input--block" data-show="#tgl_penjemputan" type="text" name="tgl_penjemputan" placeholder="DD/MM/YYYY">
                         </div>
                     <div class="form__row">
                         <label class="margin--small-v d-inline">Nama Lengkap</label>
-                        <input id="nama" name="nama" class="form-input form-input--block js-show-checkbox " data-show="#nama" type="text" name="nama" placeholder="Kaesang Pangarep">
+                        <input id="nama" name="nama" class="form-input form-input--block" data-show="#nama" type="text" name="nama" placeholder="Kaesang Pangarep">
                     </div>
                     <div class="form__row">
                         <label class="margin--small-v d-inline">No. Handphone (Whatsapp)</label>
-                        <input id="no_handphone" class="form-input form-input--block js-show-checkbox " data-show="#no_handphone" type="text" name="no_handphone" placeholder="0812345689">
+                        <input id="no_handphone" class="form-input form-input--block" data-show="#no_handphone" type="text" name="no_handphone" placeholder="0812345689">
                     </div>
                     <div class="form__row">
-                            <label class="margin--small-v d-inline">Alamat Pengirim</label>
-                            <textarea id="alamat_pengirim" rows="4" class="form-input form-input--block js-show-checkbox " data-show="#alamat_pengirim" type="text" name="alamat_pengirim" placeholder="Jl. Bhayangkara Komp. Griya Serang Ari Blok R 9 Cipocok Jaya, Serang - Banten"></textarea>
+                            <label class="margin--small-v d-inline">Alamat Penjemputan</label>
+                            <textarea id="alamat_pengirim" rows="4" class="form-input form-input--block" data-show="#alamat_pengirim" type="text" name="alamat_pengirim" placeholder="Sebutkan nama komplek/daerah tempat tinggal)"></textarea>
                         </div>
-                    <div class="form__row">
-                            <label class="margin--small-v d-inline">No. Handphone (Whatsapp)</label>
-                            <input id="nama_lengkap" class="form-input form-input--block js-show-checkbox " data-show="#nama_lengkap" type="text" name="nama_lengkap" placeholder="Sweater Lanfei Girl">
-                        </div>
+                        <div class="form__row">
+                                <label class="margin--small-v d-inline">Kendaraan Penjemputan</label>
+                                <select name="kendaraan_pengiriman" class="form-input form-input--block">
+                                    <option value="Motor">Motor (GO-SEND / GRAB-Express / Lainnya)</option>
+                                    <option value="Panti Asuhan / Rumah Singgah">Mobil (GO-BOX / GO-CAR / Ekspedisi / Lainnya)</option>
+                                </select>
+                            </div>
+                            <div class="form__row">
+                                    <!-- <label class="form-label">
+                                    <strong>No Handphone</strong>
+                                    </label> -->
+                                    <div class="checkbox-wrapper--alt small-margin-top align-top">
+                                            <input id="agreement" type="checkbox" name="agreement" value="yes">
+                                            <label for="agreement" class="checkbox-content">
+                                            <span class="material-icons">check</span>
+                                            </label>
+                                            <span class="label-text pos-r clr-softgrey">
+                                                Saya telah menyetujui bahwa tim berhak mengelola barang-barang yang disumbangkan untuk didonasikan. 
+                                            </span>
+                                        </div>
+                                  </div>
                     <div class="form_row margin--medium-t">
                         <button type="submit" class="btn btn--block btn--normal btn--blue align-center">Selesai</button>
                     </div>
                 </div>
     </form>
     <div class="loading js-loading is-hidden">
-            <div class="loading-spinner">
-              <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
-            </div>
-          </div>
-      
-          <p class="js-success-message is-hidden">Success!</p>
-          <p class="js-error-message is-hidden">Error!</p>
+        <div class="loading-spinner">
+            <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+        </div>
+    </div>
+    <p class="js-success-message is-hidden">Success!</p>
+    <p class="js-error-message is-hidden">Error!</p>
+    <script src="assets/js/vendors/jquery.min.js"></script>    
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $("#agreement").on('change', function() {
+            if ($(this).is(':checked')) {
+                $(this).attr('value', 'true');
+            } else {
+                $(this).attr('value', 'false');
+            }
+            });
+            
+            $("#shipping-step").hide();
+
+            $("#next-step").on('click', function() {
+                $("#shipping-step").fadeIn();
+                $("#personal-step").fadeOut();
+            });
+        });
+    </script>
     <script>
             //const scriptURL = 'https://script.google.com/a/stylesheets.co/macros/s/AKfycbzl3hk6JfWqMkVz8S1p5Txky_fscyNWJUCuQQHGHfVP5YLH99A/exec'
             const scriptURL = 'https://script.google.com/macros/s/AKfycbyGIBmUY_4q69ZMCRAL9Y4pI78aM-EFIBLIE2GUCv97UXKJfEs/exec'
