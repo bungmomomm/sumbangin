@@ -111,7 +111,7 @@ assetUrl = "/assets/8a9e91f";
                     <h4 class="margin--no-t">Kirim Barang</h4>
                     <div class="form__row">
                             <label class="margin--small-v d-inline">Tanggal Penjemputan</label>
-                            <input id="tgl_penjemputan" class="form-input form-input--block" data-show="#tgl_penjemputan" type="text" name="tgl_penjemputan" placeholder="DD/MM/YYYY">
+                            <input id="tgl_penjemputan" class="form-input form-input--block" data-show="#tgl_penjemputan" type="date" value="2018-09-22" min="2018-09-01" max="2018-12-31" name="tgl_penjemputan" placeholder="DD/MM/YYYY">
                         </div>
                     <div class="form__row">
                         <label class="margin--small-v d-inline">Nama Lengkap</label>
@@ -119,11 +119,11 @@ assetUrl = "/assets/8a9e91f";
                     </div>
                     <div class="form__row">
                         <label class="margin--small-v d-inline">No. Handphone (Whatsapp)</label>
-                        <input id="no_handphone" class="form-input form-input--block" data-show="#no_handphone" type="text" name="no_handphone" placeholder="0812345689">
+                        <input id="no_handphone" class="form-input form-input--block" data-show="#no_handphone" inputmode="numeric" type="number" min="0" class="form-input form-input--block input-amount auto-num-input" name="no_handphone" placeholder="0812345689">
                     </div>
                     <div class="form__row">
                             <label class="margin--small-v d-inline">Alamat Penjemputan</label>
-                            <textarea id="alamat_pengirim" rows="4" class="form-input form-input--block" data-show="#alamat_pengirim" type="text" name="alamat_pengirim" placeholder="Sebutkan nama komplek/daerah tempat tinggal)"></textarea>
+                            <textarea id="alamat_pengirim" rows="4" class="form-input form-input--block" data-show="#alamat_pengirim" type="text" name="alamat_pengirim" placeholder="Sebutkan alamat lengkap (beserta dengan patokan jika ada untuk memudahkan driver)"></textarea>
                         </div>
                         <div class="form__row">
                                 <label class="margin--small-v d-inline">Kendaraan Penjemputan</label>
@@ -157,8 +157,8 @@ assetUrl = "/assets/8a9e91f";
         </div>
     </div>
     <div class="container white-bg medium-padding align-center">
-        <p class="js-success-message is-hidden">Success!</p>
-        <p class="js-error-message is-hidden">Error!</p>
+        <p class="js-success-message is-hidden">Terima kasih! Tim kami akan segera menghubungi Anda.</p>
+        <p class="js-error-message is-hidden">Sistem sedang kami perbaiki.</p>
     </div>
     <script src="assets/js/vendors/jquery.min.js"></script>    
     <script type="text/javascript">
