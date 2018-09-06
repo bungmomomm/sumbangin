@@ -373,7 +373,7 @@
 		"oAP": "\/images\/sample-01.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/images\/sample-02.jpg": {
@@ -382,6 +382,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/images\/sample-02.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/images\/sample-03.jpg": {
+		"ft": 16384,
+		"iS": 50723,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/sample-03.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/sample-04.jpg": {
+		"ft": 16384,
+		"iS": 65120,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/sample-04.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -437,7 +459,7 @@
 "projectAttributes": {
 	"creationDate": 557046301,
 	"displayValue": "sumbangin",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-jake",
 	"iconImageWasSetByUser": 0
 	},

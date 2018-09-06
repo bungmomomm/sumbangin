@@ -62,7 +62,7 @@ body {
 
 		.pwa-header {
 			padding-top: 20px;
-			padding-bottom: 20px;
+			padding-bottom: 0;
 
 			&:before {
 				content: '';
@@ -80,13 +80,12 @@ body {
 
 		.top-content {
 			position: relative;
+			max-width: 70%;
 			z-index: 5;
-			font-size: 13px;
 			font-weight: 300;
 			padding: 0 20px;
 			p {
-				max-width: 70%;
-				margin: 0;
+				font-size: 13px;
 			}
 		}
 
@@ -162,7 +161,7 @@ body {
 			overflow: hidden;
 			background-color: #fff;
 			min-width: 145px;
-			width: 45%;
+			// width: 45%;
 			min-height: 210px;
 
 			&__head {
